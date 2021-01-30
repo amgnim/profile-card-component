@@ -1,0 +1,56 @@
+@import './config';
+
+/*****  BASE STYLES *****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: $secondary-color;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+p {
+  color: $dark-gray;
+  font-weight: 400;
+}
+
+.container {
+  @include flex(column);
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+}
+
+/***** SVG BACKGROUND  *****/
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  line-height: 1.6;
+  background: hsl(185, 75%, 39%);
+  background-image: url('../images/bg-pattern-top.svg'),
+    url('../images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 40vh, left 50vw top 40vh;
+  background-size: auto;
+}
+
+@import './card-component';
+
+/***** FOOTER *****/
+
+.attribution {
+  font-size: 11px;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 1rem;
+
+  a,
+  p {
+    color: $secondary-color;
+  }
+}

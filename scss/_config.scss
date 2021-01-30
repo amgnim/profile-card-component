@@ -1,0 +1,15 @@
+/*** VARIABLES & FUNCTIONS ***/
+
+$primary-color: hsl(185, 75%, 39%);
+$secondary-color: hsl(229, 23%, 23%);
+$light-secondary-color: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+$padding: 1.5rem 2.5rem;
+
+@mixin flex($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}
